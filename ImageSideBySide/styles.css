@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgba(11, 136, 213, 0.1);
+}
+
+.row {
+    display: flex;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.column {
+
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    transition: transform .5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
