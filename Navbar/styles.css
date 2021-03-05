@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background: rgba(247, 243, 243, 0.7);
+}
+
+#logo {
+    width: 120px;
+
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.favorites {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.formbar {
+    padding-left: 150px;
+    margin-top: 40px;
+
+}
+
+.searchsongs {
+    border: 1px solid grey;
+
+}
+
+.btn1 {
+    font-size: 22px;
+    border: none;
+
+}
+
+#logo1 {
+    width: 90px;
+
+    margin-left: 40px;
+    border-radius: 50%;
+}
+
+input {
+    padding: 7px;
+    border: none;
+}
+
+::placeholder {
+    font-size: 20px;
+}
+
+.notification {
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+/* @media screen and (max-width: 400px) {
+    #logo {
+        margin-left: 350px;
+        text-align: center;
+    }
+
+    .navbar {
+
+        flex-direction: column;
+    }
+} */
