@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <div class="menu-header">
+                <img src="images/logo.jpg" width="100" height="100">
+
+                <h4>Favourites</h4>
+
+                <div class="form">
+                    <button class="btn1" type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search..">
+                    <button class="btn1" type="submit"><i class="fa fa-microphone"></i></button>
+
+
+                </div>
+
+                <p><i class="fa fa-bell-o"></i></p>
+                <div>
+                    <img src="images/profile.jpg" width="60" height="60">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="item2">
+            <div class="carousel-main">
+
+                <div class="carousel-handler">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <div class="carousel-image">
+                        <img class="imagencs cursor" src="images/ncs1.jpg" alt="Image1" width="300px" height="200px">
+                    </div>
+                    <div class="carousel-image">
+                        <img class="imagencs cursor" src="images/ncs2.jpg" alt="Image2" width="300px" height="200px">
+                    </div>
+                    <div class="carousel-image">
+                        <img class="imagencs cursor" src="images/ncs3.jpg" alt="Image3" width="300px" height="200px">
+                    </div>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+            <div class="column-card">
+                <div class="card-latest-row">
+                    <div class="card-row">
+                        <img src="images/song2_Fotor.jpg" alt="latest1" width="150" height="150">
+                        <div class="song-latest-title">
+                            <p>MLTR</p>
+                            <p class="song-latest-title-date">MAR 2 2021</p>
+                        </div>
+                        <div class="song-latest-title-time">
+                            <p class="dot">...</p>
+                            <p class="dot">4:04</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <img src="images/song2_Fotor.jpg" alt="latest2" width="150" height="150">
+                        <div class="song-latest-title">
+                            <p>Lucky</p>
+                            <p class="song-latest-title-date">MAR 20 2021</p>
+                        </div>
+                        <div class="song-latest-title-time">
+                            <p class="dot">...</p>
+                            <p class="dot">4:04</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <img src="images/song4.jpg" alt="latest3" width="150" height="150">
+                        <div class="song-latest-title">
+                            <p>NCS Faded</p>
+                            <p class="song-latest-title-date">MAR 26 2021</p>
+                        </div>
+                        <div class="song-latest-title-time">
+                            <p class="dot">...</p>
+                            <p class="dot">5:04</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="item4">
+            <div class="artists-row">
+                <div class="artist-col">
+                    <img class="artist-image" src="images/script2_Fotor.jpg" alt="artist1" width="160" height="160">
+                    <p>The Script</p>
+                </div>
+                <div class="artist-col">
+                    <img class="artist-image" src="images/westlife.png" alt="artist2" width="160" height="160">
+                    <p>Westlife</p>
+                </div>
+                <div class="artist-col">
+                    <img class="artist-image" src="images/coldplay_Fotor.jpg" alt="artist3" width="160" height="160">
+                    <p>Coldplay</p>
+                </div>
+                <div class="artist-col">
+                    <img class="artist-image" src="images/backstreetboys_Fotor.jpg" alt="artist4" width="160"
+                        height="160">
+                    <p>Backstreet Boys</p>
+                </div>
+                <div class="artist-col">
+                    <img class="artist-image" src="images/beatles.jpeg" alt="artist2" width="160" height="160">
+                    <p>The Beatles</p>
+                </div>
+            </div>
+        </div>
+        <div class="item5">
+            <div class="playlist-column">
+                <div class="playlist-head-title">
+                    <h3>
+                        My Playlist
+                    </h3>
+                    <p>Queue</p>
+                </div>
+                <div class="playlist-head-title">
+                    <p>01</p>
+                    <img src="images/ncs2.jpg" alt="" width="100" height="100">
+                    <div>
+                        <p>Kasger</p>
+                        <p class="song-latest-title-date">Highland</p>
+                    </div>
+                    <p><i class="fa fa-heart-o"></i></p>
+                </div>
+                <div class="playlist-head-title">
+                    <p>02</p>
+                    <img src="images/ncs3.jpg" alt="" width="100" height="100">
+                    <div>
+                        <p>MLTR</p>
+                        <p class="song-latest-title-date">Blue Night</p>
+                    </div>
+                    <p><i class="fa fa-heart-o"></i></p>
+                </div>
+                <div class="playlist-head-title">
+                    <p>03</p>
+                    <img src="images/ncs1.jpg" alt="" width="100" height="100">
+                    <div>
+                        <p>Alan W</p>
+                        <p class="song-latest-title-date">Faded</p>
+                    </div>
+                    <p><i class="fa fa-heart-o"></i></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="item6">
+            <div class="musicplayer-row">
+                <div class="songtitle-row">
+                    <img src="images/song2_Fotor.jpg" alt="songs" width="100" height="100">
+
+                    <div class="songtitle-col">
+                        <p>Whatever it takes</p>
+                        <p class="singertitle">MLTR</p>
+                    </div>
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-remove"></i>
+                </div>
+                <div class="tuner-col">
+                    <div class="tunerplay-row">
+                        <i class="playicon fa fa-random fa-1x"></i>
+                        <i class="playicon fa fa-step-backward fa-1x"></i>
+                        <i class="playiconmain fa fa-play-circle-o fa-1x"></i>
+                        <i class="playicon fa fa-step-forward fa-1x"></i>
+                        <i class="playicon fa fa-refresh fa-1x "></i>
+                    </div>
+                    <div class="timerplay-row">
+                        <span class="timeplay">01:50</span><input type="range" min="1" max="100" value="30"
+                            class="seek_slider">
+                        <span class="timeplay">05:00</span>
+                    </div>
+                </div>
+                <div class="volume-row">
+                    <i class="volumeicon fa fa-download fa-1x "></i>
+                    <i class="volumeicon fa fa-laptop fa-1x "></i>
+                    <i class="volumeicon fa fa-volume-up fa-1x "></i>
+
+                    <input type="range" min="1" max="100" value="30" class="vol_slider">
+                    <i class="volumeicon fa fa-arrows fa-1x "></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1
+        showSlides(slideIndex)
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n)
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n)
+        }
+
+        function showSlides(n) {
+            let i;
+            let dots = document.getElementsByClassName("imagencs");
+            if (n > dots.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = dots.length }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "")
+            }
+            dots[slideIndex - 1].style.display = "block"
+            dots[slideIndex - 1].className += " active"
+        }
+    </script>
+</body>
+
+</html>

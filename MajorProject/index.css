@@ -1,0 +1,279 @@
+.item1 {
+    grid-area: menu1;
+}
+
+.item2 {
+    grid-area: carousel;
+}
+
+.item3 {
+    grid-area: latest;
+}
+
+.item4 {
+    grid-area: artists;
+}
+
+.item5 {
+    grid-area: playlist;
+}
+
+.item6 {
+    grid-area: player;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'menu1 menu1 menu1 menu1 menu1 menu1'
+        'carousel carousel carousel carousel playlist playlist'
+        'latest latest latest latest playlist playlist'
+        'artists artists artists artists playlist playlist'
+        'player player player player player player'
+    ;
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: large;
+}
+
+
+/* menu-header styles */
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.menu-header img {
+    border-radius: 50%;
+}
+
+.menu-header input[type=text] {
+    border: none;
+    background-color: azure;
+    margin: 0;
+    padding: 10px;
+}
+
+.form {
+    background-color: azure;
+    margin: 0px;
+    padding: 10px;
+    height: 30px;
+
+}
+
+.btn {
+    border: none;
+
+
+    height: 25px;
+
+}
+
+.btn1 {
+    border: none;
+    background-color: azure;
+
+    height: 25px;
+
+}
+
+
+/* Carousel Image style */
+
+.carousel-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-handler {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel-image {
+    padding: 10px;
+}
+
+.imagencs {
+    opacity: 0.6;
+}
+
+.active,
+.imagencs:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.prev,
+.next {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+/* Latest Realeases Design */
+.column-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-latest-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.song-latest-title {
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.song-latest-title-date {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.song-latest-title-time {
+    opacity: 0.7;
+    padding: 5px;
+    margin-top: -30px;
+}
+
+/* artists style */
+.artists-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.artist-image {
+    border-radius: 50%;
+}
+
+.artist-col {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/* Playlist styles */
+.playlist-column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.playlist-head-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+/* Musicplayer style */
+
+.musicplayer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.songtitle-row {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.songtitle-col {
+    /* display: flex; */
+    padding-left: 50px;
+    flex-direction: column;
+}
+
+.singertitle {
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+.fa-heart {
+    color: red;
+    margin-top: 20px;
+    padding-left: 8px;
+}
+
+.fa-remove {
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+    padding-left: 8px;
+}
+
+.tuner-col {
+    width: 60%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tunerplay-row {
+    flex-direction: row;
+}
+
+.timerplay-row {
+    padding-top: 10px;
+    /* flex-direction: row; */
+}
+
+.playicon {
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.playiconmain {
+    padding: 0 20px;
+    font-size: 28px;
+}
+
+.timeplay {
+    padding: 0 15px;
+}
+
+.seek_slider {
+    width: 50%;
+}
+
+.volume-row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+}
+
+.volumeicon {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.vol_slider {
+    margin-top: -15px;
+}
