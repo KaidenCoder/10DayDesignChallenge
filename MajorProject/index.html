@@ -14,23 +14,25 @@
     <div class="grid-container">
         <div class="item1">
             <div class="menu-header">
-                <img src="images/logo.jpg" width="100" height="100">
+                <div class="profilelogo">
+                    <img src="images/logo.jpg" width="100" height="100">
 
-                <h4>Favourites</h4>
-
-                <div class="form">
-                    <button class="btn1" type="submit"><i class="fa fa-search"></i></button>
-                    <input type="text" placeholder="Search..">
-                    <button class="btn1" type="submit"><i class="fa fa-microphone"></i></button>
-
-
+                    <h4 class="profilefav">Favourites</h4>
                 </div>
+                <div class="profile-menu">
+                    <div class="form">
+                        <button class="btn1" type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Search..">
+                        <button class="btn1" type="submit"><i class="fa fa-microphone"></i></button>
 
-                <p><i class="fa fa-bell-o"></i></p>
-                <div>
-                    <img src="images/profile.jpg" width="60" height="60">
+
+                    </div>
+
+                    <p><i class="fa fa-bell-o"></i></p>
+                    <div>
+                        <img src="images/profile.jpg" width="80" height="80">
+                    </div>
                 </div>
-
             </div>
 
         </div>
@@ -54,6 +56,7 @@
         </div>
         <div class="item3">
             <div class="column-card">
+                <h3>Latest Release</h3>
                 <div class="card-latest-row">
                     <div class="card-row">
                         <img src="images/song2_Fotor.jpg" alt="latest1" width="150" height="150">
@@ -94,6 +97,7 @@
             </div>
         </div>
         <div class="item4">
+            <h3 class="popularartistsname">Popular Artists</h3>
             <div class="artists-row">
                 <div class="artist-col">
                     <img class="artist-image" src="images/script2_Fotor.jpg" alt="artist1" width="160" height="160">
@@ -105,7 +109,7 @@
                 </div>
                 <div class="artist-col">
                     <img class="artist-image" src="images/coldplay_Fotor.jpg" alt="artist3" width="160" height="160">
-                    <p>Coldplay</p>
+                    <p><a href="detail.html">Coldplay</a></p>
                 </div>
                 <div class="artist-col">
                     <img class="artist-image" src="images/backstreetboys_Fotor.jpg" alt="artist4" width="160"
@@ -124,30 +128,36 @@
                     <h3>
                         My Playlist
                     </h3>
-                    <p>Queue</p>
+                    <div class="popup">Queue
+                        <div class="dropdown-content">
+                            <p>PlayLists</p>
+                            <p>Favourite Songs</p>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="playlist-head-title">
-                    <p>01</p>
+                    <p class="space-play">01</p>
                     <img src="images/ncs2.jpg" alt="" width="100" height="100">
-                    <div>
+                    <div class="space-play">
                         <p>Kasger</p>
                         <p class="song-latest-title-date">Highland</p>
                     </div>
                     <p><i class="fa fa-heart-o"></i></p>
                 </div>
                 <div class="playlist-head-title">
-                    <p>02</p>
+                    <p class="space-play">02</p>
                     <img src="images/ncs3.jpg" alt="" width="100" height="100">
-                    <div>
+                    <div class="space-play">
                         <p>MLTR</p>
                         <p class="song-latest-title-date">Blue Night</p>
                     </div>
                     <p><i class="fa fa-heart-o"></i></p>
                 </div>
                 <div class="playlist-head-title">
-                    <p>03</p>
+                    <p class="space-play">03</p>
                     <img src="images/ncs1.jpg" alt="" width="100" height="100">
-                    <div>
+                    <div class="space-play">
                         <p>Alan W</p>
                         <p class="song-latest-title-date">Faded</p>
                     </div>
@@ -157,6 +167,7 @@
             </div>
         </div>
         <div class="item6">
+            <hr>
             <div class="musicplayer-row">
                 <div class="songtitle-row">
                     <img src="images/song2_Fotor.jpg" alt="songs" width="100" height="100">
@@ -195,7 +206,7 @@
     </div>
 
     <script>
-        let slideIndex = 1
+        let slideIndex = 2
         showSlides(slideIndex)
 
         function plusSlides(n) {

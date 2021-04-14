@@ -1,5 +1,6 @@
 .item1 {
     grid-area: menu1;
+
 }
 
 .item2 {
@@ -20,27 +21,37 @@
 
 .item6 {
     grid-area: player;
+
 }
 
 .grid-container {
     display: grid;
     grid-template-areas:
         'menu1 menu1 menu1 menu1 menu1 menu1'
-        'carousel carousel carousel carousel playlist playlist'
-        'latest latest latest latest playlist playlist'
-        'artists artists artists artists playlist playlist'
+        'carousel carousel carousel playlist playlist playlist'
+        'latest latest latest playlist playlist playlist'
+        'artists artists artists playlist playlist playlist'
         'player player player player player player'
     ;
     grid-gap: 10px;
     background-color: white;
-    padding: 10px;
+    /* padding: 10px; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .grid-container>div {
     background-color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: large;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.98);
+}
+
+hr {
+    opacity: 0.3;
 }
 
 
@@ -48,24 +59,38 @@
 
 .menu-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.001);
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .menu-header img {
     border-radius: 50%;
+    padding-bottom: 5px;
+
+}
+
+.profilelogo {
+    display: flex;
+    flex-direction: row;
+}
+
+.profilefav {
+    padding-left: 50px;
 }
 
 .menu-header input[type=text] {
     border: none;
-    background-color: azure;
+    background-color: rgba(230, 232, 234, 0.1);
     margin: 0;
     padding: 10px;
 }
 
 .form {
-    background-color: azure;
-    margin: 0px;
+    background-color: rgba(230, 232, 234, 0.6);
+    ;
+    margin: 15px 0 0 0;
     padding: 10px;
     height: 30px;
 
@@ -81,10 +106,19 @@
 
 .btn1 {
     border: none;
-    background-color: azure;
-
+    background-color: rgba(230, 232, 234, 0.1);
     height: 25px;
+}
 
+.fa-bell-o {
+    margin-top: 10px;
+    padding: 0 30px;
+
+}
+
+.profile-menu {
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -98,7 +132,7 @@
 .carousel-handler {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .carousel-image {
@@ -112,7 +146,7 @@
 .active,
 .imagencs:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.35);
     z-index: 2;
 }
 
@@ -124,6 +158,8 @@
 }
 
 /* Latest Realeases Design */
+
+
 .column-card {
     display: flex;
     flex-direction: column;
@@ -140,7 +176,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 20px;
+    margin: 0 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .song-latest-title {
@@ -160,6 +198,10 @@
 }
 
 /* artists style */
+.popularartistsname {
+    margin-bottom: -10px;
+}
+
 .artists-row {
     display: flex;
     flex-direction: row;
@@ -180,7 +222,26 @@
 .playlist-column {
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
+}
 
+.popup {
+    margin-top: 20px;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    padding: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.popup:hover .dropdown-content {
+    display: block;
 }
 
 .playlist-head-title {
@@ -190,14 +251,25 @@
     padding-bottom: 10px;
 }
 
+.fa-heart-o {
+    margin-left: 50px;
+}
+
 /* Musicplayer style */
 
 .musicplayer-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    /* box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+.space-play {
+    padding: 5px;
 }
 
 .songtitle-row {

@@ -31,39 +31,58 @@
         'player player player player player player'
     ;
     grid-gap: 10px;
-    background-color: aliceblue;
+    background-color: white;
     padding: 10px;
 }
 
 .grid-container>div {
-    background-color: aquamarine;
+    background-color: white;
     text-align: center;
     padding: 20px 0;
     font-size: large;
 }
 
+hr {
+    opacity: 0.3;
+}
+
+
 /* menu-header styles */
 
 .menu-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.001);
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .menu-header img {
     border-radius: 50%;
+    padding-bottom: 5px;
+
+}
+
+.profilelogo {
+    display: flex;
+    flex-direction: row;
+}
+
+.profilefav {
+    padding-left: 50px;
 }
 
 .menu-header input[type=text] {
     border: none;
-    background-color: azure;
+    background-color: rgba(230, 232, 234, 0.1);
     margin: 0;
     padding: 10px;
 }
 
 .form {
-    background-color: azure;
-    margin: 0px;
+    background-color: rgba(230, 232, 234, 0.6);
+    ;
+    margin: 15px 0 0 0;
     padding: 10px;
     height: 30px;
 
@@ -71,22 +90,35 @@
 
 .btn {
     border: none;
+
+
     height: 25px;
 
 }
 
 .btn1 {
     border: none;
-    background-color: azure;
-
+    background-color: rgba(230, 232, 234, 0.1);
     height: 25px;
+}
 
+.fa-bell-o {
+    margin-top: 10px;
+    padding: 0 30px;
+
+}
+
+.profile-menu {
+    display: flex;
+    flex-direction: row;
 }
 
 /* BigImage Row */
 .bigimage-row {
     display: flex;
     flex-direction: row;
+    padding: 10px;
+    box-shadow: 1px 7px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .bgimage-col-details {
@@ -160,29 +192,35 @@
 
 .similarname2 {
     padding: 20px;
+
 }
 
 .similar-head-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .similar-head-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .similar-song-head-title {
     display: flex;
     flex-direction: row;
-
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 .similar-song-head2 {
     display: flex;
     flex-direction: row;
+
 }
 
 .similar-latest-title-date {
@@ -212,7 +250,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 1px 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .playlist-row {
@@ -292,11 +330,14 @@
 /* Musicplayer style */
 
 .musicplayer-row {
+    position: -webkit-sticky;
+    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 20px;
 }
 
 .songtitle-row {
