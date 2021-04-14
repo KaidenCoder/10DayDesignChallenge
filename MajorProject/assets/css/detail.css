@@ -33,6 +33,7 @@
     grid-gap: 10px;
     background-color: white;
     padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .grid-container>div {
@@ -42,6 +43,7 @@
     font-size: large;
 }
 
+/* Any hr tag available in detail.html */
 hr {
     opacity: 0.3;
 }
@@ -60,7 +62,6 @@ hr {
 .menu-header img {
     border-radius: 50%;
     padding-bottom: 5px;
-
 }
 
 .profilelogo {
@@ -81,19 +82,14 @@ hr {
 
 .form {
     background-color: rgba(230, 232, 234, 0.6);
-    ;
     margin: 15px 0 0 0;
     padding: 10px;
     height: 30px;
-
 }
 
 .btn {
     border: none;
-
-
     height: 25px;
-
 }
 
 .btn1 {
@@ -105,7 +101,6 @@ hr {
 .fa-bell-o {
     margin-top: 10px;
     padding: 0 30px;
-
 }
 
 .profile-menu {
@@ -113,7 +108,7 @@ hr {
     flex-direction: row;
 }
 
-/* BigImage Row */
+/* BigImage Row Styles*/
 .bigimage-row {
     display: flex;
     flex-direction: row;
@@ -180,7 +175,7 @@ hr {
     padding-left: 20px;
 }
 
-/* Similar Artists */
+/* Similar Artists Styling*/
 .similar-column {
     display: flex;
     flex-direction: column;
@@ -191,22 +186,20 @@ hr {
 }
 
 .similarname2 {
+    margin-top: 15px;
     padding: 20px;
-
 }
 
 .similar-head-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .similar-head-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .similar-song-head-title {
@@ -220,7 +213,6 @@ hr {
 .similar-song-head2 {
     display: flex;
     flex-direction: row;
-
 }
 
 .similar-latest-title-date {
@@ -237,13 +229,10 @@ hr {
 }
 
 
-
-
 /* Playlist styles */
 .playlist-column {
     display: flex;
     flex-direction: column;
-
 }
 
 .playlist-total-row {
@@ -284,7 +273,8 @@ hr {
     color: blue;
 }
 
-/* Recently Played */
+
+/* Recently Played Styles*/
 .recently-column {
     display: flex;
     flex-direction: column;
@@ -325,8 +315,6 @@ hr {
 }
 
 
-
-
 /* Musicplayer style */
 
 .musicplayer-row {
@@ -347,7 +335,6 @@ hr {
 }
 
 .songtitle-col {
-    /* display: flex; */
     padding-left: 50px;
     flex-direction: column;
 }
@@ -382,7 +369,6 @@ hr {
 
 .timerplay-row {
     padding-top: 10px;
-    /* flex-direction: row; */
 }
 
 .playicon {

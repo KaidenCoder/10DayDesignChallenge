@@ -35,7 +35,6 @@
     ;
     grid-gap: 10px;
     background-color: white;
-    /* padding: 10px; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -50,6 +49,7 @@ body {
     background-color: rgba(255, 255, 255, 0.98);
 }
 
+/* Any hr tag available in detail.html */
 hr {
     opacity: 0.3;
 }
@@ -89,19 +89,14 @@ hr {
 
 .form {
     background-color: rgba(230, 232, 234, 0.6);
-    ;
     margin: 15px 0 0 0;
     padding: 10px;
     height: 30px;
-
 }
 
 .btn {
     border: none;
-
-
     height: 25px;
-
 }
 
 .btn1 {
@@ -113,7 +108,6 @@ hr {
 .fa-bell-o {
     margin-top: 10px;
     padding: 0 30px;
-
 }
 
 .profile-menu {
@@ -157,8 +151,7 @@ hr {
     margin-top: 70px;
 }
 
-/* Latest Realeases Design */
-
+/* Latest Realeases Design Styles */
 
 .column-card {
     display: flex;
@@ -197,6 +190,27 @@ hr {
     margin-top: -30px;
 }
 
+.popup-card {
+    margin-top: 20px;
+    user-select: none;
+    cursor: pointer;
+    justify-content: left;
+    text-align: left;
+}
+
+.dropdown-content-card {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: white;
+}
+
+.popup-card:hover .dropdown-content-card {
+    display: block;
+}
+
 /* artists style */
 .popularartistsname {
     margin-bottom: -10px;
@@ -212,6 +226,10 @@ hr {
     border-radius: 50%;
 }
 
+.artist-image:hover {
+    opacity: 0.5;
+}
+
 .artist-col {
     display: flex;
     flex-direction: column;
@@ -223,13 +241,13 @@ hr {
     display: flex;
     flex-direction: column;
     margin-right: 10px;
+    overflow: auto;
 }
 
 .popup {
     margin-top: 20px;
     user-select: none;
     cursor: pointer;
-
 }
 
 .dropdown-content {
@@ -264,8 +282,6 @@ hr {
     padding-top: 30px;
     padding-left: 60px;
     padding-right: 60px;
-
-    /* box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2); */
 }
 
 .space-play {
@@ -273,13 +289,11 @@ hr {
 }
 
 .songtitle-row {
-
     display: flex;
     flex-direction: row;
 }
 
 .songtitle-col {
-    /* display: flex; */
     padding-left: 50px;
     flex-direction: column;
 }
@@ -314,7 +328,6 @@ hr {
 
 .timerplay-row {
     padding-top: 10px;
-    /* flex-direction: row; */
 }
 
 .playicon {
